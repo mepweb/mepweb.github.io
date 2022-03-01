@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: myFont;
 }
 body{
     height: 100vh;
@@ -94,14 +93,22 @@ body{
     justify-content: center;
     padding: 30px;
 }
-.playeridzone{position: relative;}
 .playeridlabel{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: bold;
     color: white;
 }
+.inputid{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+}
 .playerid{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 50px;
     margin-top: 10px;
@@ -114,15 +121,12 @@ body{
 }
 .ok{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     background-color: #344ed3;
     border: none;
-    right: -1px;
-    top: 28px;
+    right: 0;
+    bottom: 0;
 }
 .paymentmethod{
     margin-top: 50px;
@@ -156,9 +160,129 @@ body{
     color: white;
 }
 .activeimg{
+    position: absolute;
     width: 35px;
+    height: 35px;
+    background: url("https://cdn.midasbuy.com/oversea_web/static/images/list-active-new-0f7ecf2cdd.svg") no-repeat center;
+    top: 0;
+    left: 0;
+}
+.select-product{
+    margin-top: 50px;
+}
+.product-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #1b234d;
+}
+.activeimguc1{
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url("https://cdn.midasbuy.com/oversea_web/static/images/list-active-new-0f7ecf2cdd.svg") no-repeat center;
+    top: 0;
+    left: 0;
+}
+.activeimguc2{
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url("https://cdn.midasbuy.com/oversea_web/static/images/list-active-new-0f7ecf2cdd.svg") no-repeat center;
+    top: 0;
+    left: 0;
+}
+.activeimguc3{
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url("https://cdn.midasbuy.com/oversea_web/static/images/list-active-new-0f7ecf2cdd.svg") no-repeat center;
+    top: 0;
+    left: 0;
+}
+.activeimguc4{
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url("https://cdn.midasbuy.com/oversea_web/static/images/list-active-new-0f7ecf2cdd.svg") no-repeat center;
+    top: 0;
+    left: 0;
+}
+.ucler{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 172px;
+    height: 280px;
+    padding: 20px;
+    background: url(../resimler/before.png) no-repeat center;
+    background-size: cover;
+    border: none;
+}
+.ucler_new{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 172px;
+    height: 280px;
+    padding: 15px;
+    background: url(../resimler/after.png) no-repeat center;
+    background-size: cover;
+    border: 1px solid #1986fe;
+}
+.ucbilgi{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: myFont;
+    font-size: 18px;
+}
+.bonusuc{
+    margin-left: 2px;
+    color: orange;
+}
+.ucresmi img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bpbilgi{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #26316e;
+    font-family: myFont;
+}
+.bpbilgi img{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    width: 30px;
 }
